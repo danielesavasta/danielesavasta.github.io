@@ -1,0 +1,235 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900,600,300);
+* {
+    padding: 0;
+    margin: 0;
+    border: 0
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0;
+}
+a {
+    color: inherit;
+    transition: all 0.5s ease;
+    margin: 0 -0.15em;
+    padding: 0 0.15em
+}
+a:hover {
+    background-color: #A9DB43
+}
+#wrapper {
+    min-height: 100%;
+    margin-bottom: -10vw
+}
+#wrapper:after {
+    content: "";
+    display: block;
+}
+#facilities>img {
+    width: 33.3%
+}
+nav>a,
+footer>p {
+    font-size: 1.5vh;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    display: inline-block;
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    height: 5vh;
+    line-height: 5vh;
+    background: black;
+    border: 0;
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease;
+}
+footer,
+footer>p {
+    width: 100%;
+    height: auto;
+}
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+h2 {
+    padding-top: 5vh;
+    font-size: 5vh;
+    font-weight: 900;
+}
+h3 {
+    font-size: 5vh;
+    font-weight: 300;
+}
+h4 {
+    font-size: 5vh;
+    font-weight: 300;
+    display: inline
+}
+p {
+    font-size: 5vh
+}
+#people>p {
+    display: inline
+}
+nav>a:hover {
+    background-color: #A9DB43;
+}
+#about,
+#people,
+#activities,
+#projects,
+#facilities>p {
+    margin: 5vw
+}
+#people {
+    margin-bottom: 50vh
+}
+#facilities>h2 {
+    margin-left: 5vw
+}
+#title {
+    width: 100%;
+    height: 100vh;
+    background: url(images/xlabLogo.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#activities>article {
+    display: inline-block;
+    box-shadow: 10px 10px 10px #EEE;
+    margin-left: 15px;
+    border: 1px solid #EEE;
+    padding: 15px;
+    width: 30%;
+    vertical-align: top;
+}
+#activities>article>img {
+    max-width: 99%
+}
+
+/* Portrait and Landscape */
+
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    p,
+    h2,
+    h3,
+    h4,
+    footer>p {
+        font-size: 20px
+    }
+    #activities>article>h3 {
+        font-size: 50px;
+        text-align: left;
+    }
+    nav>a {
+        font-size: 30px;
+        width: 100%;
+        line-height: 150px;
+        height: 150px
+    }
+    #title {
+        max-width: 100%;
+        margin-top: 600px;
+        max-height: 800px
+    }
+    nav {
+        position: absolute;
+        background-color: black
+    }
+    #activities {
+        width: 95%;
+    }
+    #activities>article {
+        min-width: 60%;
+        max-width: 100%;
+        text-align: center;
+    }
+}
+@media only screen and (min-device-width: 481px) and (orientation: portrait) {
+    p,
+    h2,
+    h3,
+    h4,
+    footer>p {
+        font-size: 20px
+    }
+    #activities>article>h3 {
+        font-size: 50px;
+        text-align: left;
+    }
+    nav>a {
+        font-size: 25px;
+        width: 100%;
+        line-height: 125px;
+        height: 125px
+    }
+    #title {
+        max-width: 100%;
+        margin-top: 500px;
+        max-height: 800px
+    }
+    nav {
+        position: absolute;
+        background-color: black
+    }
+    #activities {
+        width: 95%;
+    }
+    #activities>article {
+        min-width: 60%;
+        max-width: 100%;
+        text-align: center;
+    }
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 1280px) and (orientation: landscape) {
+    nav>a {
+        font-size: 15px;
+        line-height: 40px;
+        height: 40px
+    }
+    h2 {
+        padding-top: 50px;
+    }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    #title {
+background-attachment:scroll;
+        display: block
+    }
+        p,
+    h2,
+    h3,
+    h4 {
+        font-size: 4vh;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+   #title {
+background-attachment:scroll;
+        display: block
+    }
+        p,
+    h2,
+    h3,
+    h4 {
+        font-size: 4vh;
+    }
+}
